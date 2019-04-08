@@ -2,11 +2,190 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: PINK</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-image" src="http://placehold.it/75x22" alt="Логотип Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__link--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="htmlacademy.html">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="promo">
+        <h1 class="promo__title">Взгляните на жизнь иначе!</h1>
+        <div class="promo__wrap-list">
+          <a class="promo__link button" href="#">Скачать приложение</a>
+          <ul class="promo__list">
+            <li class="promo__item">
+              <a class="promo__link-add promo__link-add--app" href="#">
+                <span class="visually-hidden">для iPhone</span>
+                <img class="promo__img" src="http://placehold.it/47x56" alt="Логотип Apple">
+              </a>
+            </li>
+            <li class="promo__item">
+              <a class="promo__link-add--andr" href="#">
+                <span class="visually-hidden">для Android</span>
+                <img class="promo__img" src="http://placehold.it/43x47" alt="Логотип Android">
+              </a>
+            </li>
+            <li class="promo__item">
+              <a class="promo__link-add--win" href="#">
+                <span class="visually-hidden">для Windows</span>
+                <img class="promo__img" src="http://placehold.it/44x41" alt="Логотип Microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title visually-hidden">Информация о приложении PINK</h1>
+      <section class="advantages">
+        <h2 class="advantages__main-title">Устали от серости мегаполиса?</h2>
+        <h2 class="advantages__main-title advantages__main-title--last">Нам есть, что вам предложить!</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <img class="advantages__img advantages__img--desktop" src="http://placehold.it/157x320" alt="">
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <img class="advantages__img advantages__img--desktop" src="http://placehold.it/157x320" alt="">
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description advantages__description--last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <img class="advantages__img advantages__img--desktop" src="http://placehold.it/157x320" alt="">
+          </li>
+        </ul>
+        <div class="advantages__info">
+          <div class="advantages__wrapper">
+            <h3 class="advantages__title-time">Эффект на 24 часа!</h3>
+            <p class="advantages__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях
+              к выложенной фотографии!»</p>
+              <cite class="reviews__author-name">Николай Петров <span class="reviews__author-info">25 лет, водитель трамвая</span></cite>
+            </blockquote>
+            <button class="slider__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="slider__next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </p>
+        </div>
+      </section>
+      <section class="tariffs">
+        <div class="tariffs__wrapper slider slider--tariffs">
+          <table class="tariffs__table slider__list">
+            <tr class="tariffs__list slider__item">
+              <td class="tariffs__name">База
+                <span class="tarriffs__price">1,99 usd</span>
+              </td>
+              <td class="tariffs__value tariffs__value--yes">Розовый фильтр</td>
+              <td class="tariffs__value tariffs__value--no">Смайлики</td>
+              <td class="tariffs__value tariffs__value--no">Комментарии</td>
+            </tr>
+            <tr class="tariffs__list slider__item">
+              <td class="tariffs__name">Стандарт
+                <span class="tarriffs__price">3,99 usd</span>
+              </td>
+              <td class="tariffs__value tariffs__value--yes">Розовый фильтр</td>
+              <td class="tariffs__value tariffs__value--yes">Смайлики</td>
+              <td class="tariffs__value tariffs__value--no">Комментарии</td>
+            </tr>
+            <tr class="tariffs__list slider__item">
+              <td class="tariffs__name">Анлим
+                <span class="tarriffs__price">9,99 usd</span>
+              </td>
+              <td class="tariffs__value tariffs__value--yes">Розовый фильтр</td>
+              <td class="tariffs__value tariffs__value--yes">Смайлики</td>
+              <td class="tariffs__value tariffs__value--yes">Комментарии</td>
+            </tr>
+          </table>
+          <p class="tariffs__toggles slider__toggles slider__toggles--tariffs">
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--active" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__text contacts__text--phone">Звоните:
+            <a class="contacts__info" href="tel:+7812555-66-66">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__text contacts__text--email">Пишите:
+            <a class="contacts__info" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__text contacts__text--address">Приезжайте в гости:
+            <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+          </p>
+        </div>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123775!2d30.320894615835055!3d59.938796869048254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1507960523808" style="border:0" allowfullscreen="">
+        </iframe>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+        <img class="page-footer__logo-img" src="http://placehold.it/40x40" alt="Логотип Pink">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в твиттере</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в фейсбуке</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в ютубе</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <p class="copywrite__text">Разработано</p>
+          <a class="copywrite__logo" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">HTML-академия</span>
+          </a>
+      </div>
+    </footer>
   </body>
 </html>

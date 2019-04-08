@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: PINK</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header__logo" href="index.html">
+          <img class="main-nav__logo-image" src="http://placehold.it/75x22" alt="Логотип Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="htmlacademy.html">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main page-main--inner">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+      <form class="form" method="get" action="https://echo.htmlacademy.ru">
+        <p class="form__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
+        <div class="form__field form__field--name">
+          <h2 class="visually-hidden">Данные пользователя</h2>
+          <div class="form__section form__section--name">
+            <label class="form__label form__label--name" for="surname_field">Фамилия</label>
+            <input class="form__text" type="text" name="surname" id="surname_field" placeholder="Укажите фамилию" required="">
+          </div>
+          <div class="form__section form__section--name">
+            <label class="form__label form__label--name" for="name_field">Имя</label>
+            <input class="form__text" type="text" name="name" id="name_field" placeholder="Укажите ваше имя" required="">
+          </div>
+          <div class="form__section form__section--name">
+            <label class="form__label form__label--name" for="second-name_field">Отчество</label>
+            <input class="form__text" type="text" name="second-name" id="second-name_field" placeholder="Ну и отчество тоже">
+          </div>
+        </div>
+        <div class="form__field form__field--check">
+          <h2 class="form__title form__title--check">Ваши безбашенные достижения в путешествии</h2>
+          <div class="form__section-check">
+            <input class="form__check" type="checkbox" id="selfi_field" name="selfi" checked>
+            <label class="form__label-check" for="selfi_field">Сделал селфи с акулой</label>
+          </div>
+          <div class="form__section-check">
+            <input class="form__check" type="checkbox" id="beach_field" name="beach" checked>
+            <label class="form__label-check" for="beach_field">Обгорел на пляже</label>
+          </div>
+          <div class="form__section-check">
+            <input class="form__check" type="checkbox" id="norris_field" name="norris">
+            <label class="form__label-check" for="norris_field">Видел Чака Норриса</label>
+          </div>
+          <div class="form__section-check">
+            <input class="form__check" type="checkbox" id="souvenirs_field" name="souvenirs">
+            <label class="form__label-check" for="souvenirs_field">Накупил сувениров</label>
+          </div>
+          <div class="form__section-check">
+            <input class="form__check" type="checkbox" id="tower_field" name="tower" checked>
+            <label class="form__label-check" for="tower_field">Удержал башню</label>
+          </div>
+          <div class="form__section-check">
+            <input class="form__check" type="checkbox" id="hotel_field" name="hotel">
+            <label class="form__label-check" for="hotel_field">Разгромил отель</label>
+          </div>
+        </div>
+        <div class="form__field form__field--info">
+          <h2 class="visually-hidden">Данные пользователя</h2>
+          <div class="form__section form__section--info">
+            <label class="form__label form__label--info" for="phone_field">Номер телефона</label>
+            <input class="form__text form__text--info" type="tel" name="phone" id="phone_field" placeholder="Номер, пожалуйста" required="">
+          </div>
+          <div class="form__section form__section--info">
+            <label class="form__label form__label--info" for="email_field">Адрес почты</label>
+            <input class="form__text form__text--info" type="email" name="email" id="email_field" placeholder="Введите почту" required="">
+          </div>
+        </div>
+        <div class="form__field form__field--radio">
+          <h2 class="form__title">С каким приложением путешествовали?</h2>
+          <div class="form__section-radio">
+            <input class="form__radio" type="radio" id="ios_field" name="apps" checked>
+            <label class="form__label-radio" for="ios_field">Pink для iOS</label>
+          </div>
+          <div class="form__section-radio">
+            <input class="form__radio" type="radio" id="android_field" name="apps">
+            <label class="form__label-radio" for="android_field">Pink на Android</label>
+          </div>
+          <div class="form__section-radio">
+            <input class="form__radio" type="radio" id="windows_field" name="apps">
+            <label class="form__label-radio" for="windows_field">Windows Phone</label>
+          </div>
+        </div>
+        <div class="form__field form__field--textarea">
+          <h2 class="form__title">Опишите свои эмоции</h2>
+          <textarea class="form__comment" id="review_field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <label class="form__label visually-hidden" for="review_field">Впечатления о путешествии</label>
+        </div>
+        <div class="form__button-wrap">
+          <button class="form__send" type="submit">Отправить форму</button>
+          <p class="form__note"><sup>*</sup>— Обязательные <span>для заполнения</span> поля</p>
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+        <img class="page-footer__logo-img" src="http://placehold.it/40x40" alt="Логотип Pink">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в твиттере</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в фейсбуке</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в ютубе</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <p class="copywrite__text">Разработано</p>
+          <a class="copywrite__logo" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">HTML-академия</span>
+          </a>
+      </div>
+    </footer>
+  </body>
+</html>
