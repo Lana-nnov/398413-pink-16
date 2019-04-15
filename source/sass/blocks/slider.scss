@@ -1,0 +1,31 @@
+.slider__prev {
+  display: none;
+}
+.slider__next {
+  display: none;
+}
+.slider__item {
+}
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+.slider__toggle {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #bec2c7;
+  border: none;
+}
+.slider__toggle--active {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #000000;
+}

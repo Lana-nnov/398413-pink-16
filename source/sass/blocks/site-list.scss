@@ -1,0 +1,12 @@
+.site-list__link {
+  color: #ffffff;
+}
+.site-list__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.site-list__item:nth-child(1) {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}

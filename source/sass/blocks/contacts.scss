@@ -1,0 +1,35 @@
+.contacts {
+  padding-top: 40px;
+  text-align: center;
+}
+.contacts__title {
+  font-size: 24px;
+  color: #283645;
+  width: 280px;
+  margin: 0 auto;  
+  margin-bottom: 30px;
+  outline: 1px solid red;
+}
+.contacts__wrapper {
+  width: 280px;
+  margin: 0 auto; 
+  padding-bottom: 40px;
+  outline: 1px solid red;
+}
+.contacts__text {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.contacts__info {
+  display: block;
+  font-size: 24px;
+  font-weight: normal;
+  color: #d22856;
+}
+.contacts__map {
+  width: 100%;
+  height: 200px;
+}
