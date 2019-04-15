@@ -1,0 +1,91 @@
+.tariffs {
+  position: relative;
+  background-color: #f2f2f2;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.tariffs__wrapper {
+  overflow: hidden;
+}
+
+.tariffs__table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 840px;
+  margin-left: calc(-280px + (100vw - 280px) / 2);
+  margin-bottom: 30px;
+}
+
+.tariffs__table tbody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariffs__list {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.tariffs__name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #283645;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tarriffs__price {
+  display: table;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.tariffs__value {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+
+.tariffs__value--yes,
+.tariffs__value--no {
+  position: relative;
+}
+
+.tariffs__value--no::before {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 20px;
+  background-image: url("../img/icon-no.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 27px;
+  outline: 1px solid red;
+}
+
+.tariffs__value--yes::before {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 20px;
+  background-image: url("../img/icon-yes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 21px;
+  outline: 1px solid green;
+}
