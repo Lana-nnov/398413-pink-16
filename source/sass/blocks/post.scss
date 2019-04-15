@@ -6,7 +6,7 @@
   font-size: 14px;
   text-align: center;
   outline: 1px solid red;
-  
+
   span {
     display: block;
   }
@@ -48,7 +48,7 @@
   background-color: #283645;
   margin: 0 auto;
   margin-bottom: 25px;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -57,7 +57,7 @@
     width: 12px;
     height: 12px;
     background-color: #f2f2f2;
-    border: 2px solid #d22856;    
+    border: 2px solid #d22856;
     border-radius: 50%;
   }
 }
@@ -82,5 +82,5 @@
   font-weight: bold;
 }
 .post__link--active {
-  color: #d22856; 
+  color: #d22856;
 }

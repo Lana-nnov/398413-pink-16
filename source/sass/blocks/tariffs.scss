@@ -5,14 +5,14 @@
   padding-bottom: 40px;
 }
 .tariffs__wrapper {
-  overflow: hidden;     
+  overflow: hidden;
 }
 .tariffs__table {
   border-spacing: 0;
   border-collapse: collapse;
   width: 840px;
-  margin-left: calc(-280px + (100vw - 280px) / 2 ); 
-  margin-bottom: 30px;  
+  margin-left: calc(-280px + (100vw - 280px) / 2 );
+  margin-bottom: 30px;
 }
 .tariffs__table tbody {
   display: flex;
