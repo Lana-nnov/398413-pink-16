@@ -12,10 +12,6 @@
   padding: 0;
 }
 
-.reviews__author-name {
-  order: 1;
-}
-
 .reviews__text {
   order: 2;
   font-size: 14px;
@@ -23,6 +19,7 @@
 }
 
 .reviews__author-name {
+  order: 1;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
