@@ -4,9 +4,11 @@
   padding-top: 70px;
   padding-bottom: 40px;
 }
+
 .tariffs__wrapper {
   overflow: hidden;
 }
+
 .tariffs__table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -14,10 +16,12 @@
   margin-left: calc(-280px + (100vw - 280px) / 2 );
   margin-bottom: 30px;
 }
+
 .tariffs__table tbody {
   display: flex;
   justify-content: space-between;
 }
+
 .tariffs__list {
   width: 280px;
   margin: 0 auto;
@@ -25,6 +29,7 @@
   flex-direction: column;
   background-color: #fff;
 }
+
 .tariffs__name {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -35,11 +40,13 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .tarriffs__price {
   display: table;
   margin: 0 auto;
   font-size: 24px;
 }
+
 .tariffs__value {
   position: relative;
   padding-top: 20px;
@@ -51,10 +58,12 @@
   border-bottom: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
 }
+
 .tariffs__value--yes,
 .tariffs__value--no {
   position: relative;
 }
+
 .tariffs__value--no::before {
   position: absolute;
   content: "";
@@ -67,6 +76,7 @@
   height: 27px;
   outline: 1px solid red;
 }
+
 .tariffs__value--yes::before {
   position: absolute;
   content: "";

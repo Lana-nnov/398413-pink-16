@@ -1,11 +1,14 @@
 .slider__prev {
   display: none;
 }
+
 .slider__next {
   display: none;
 }
+
 .slider__item {
 }
+
 .slider__toggles {
   display: flex;
   justify-content: center;
@@ -14,6 +17,7 @@
   padding: 0;
   padding-bottom: 40px;
 }
+
 .slider__toggle {
   margin-left: 10px;
   margin-right: 10px;
@@ -23,6 +27,7 @@
   background-color: #bec2c7;
   border: none;
 }
+
 .slider__toggle--active {
   width: 20px;
   height: 20px;
