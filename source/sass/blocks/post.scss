@@ -93,3 +93,138 @@
 .post__link--active {
   color: #d22856;
 }
+
+@media (min-width: $tablet-width) {  
+  .post__text {
+    width: 420px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 18px;
+  }
+
+  .post__done {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .post__img {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 300px;
+  }
+
+  .post__done-info {
+    margin-left: 10px;
+    width: 300px;
+  }
+  .post__filters-list {
+    margin: 0;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 260px;
+    flex-direction: column;
+  }
+
+  .post__controls {
+    width: 200px;
+    margin: 0;
+    display: none;
+  }
+
+  .post__controls--fill,
+  .post__controls--crop,
+  .post__controls--contrast {
+    display: block;
+  }
+
+  .post__item {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    outline: 1px solid pink;
+  }
+
+  .post__icon {
+    width: 22px;
+    height: 22px;
+    margin-right: auto;
+    outline: 1px solid red;
+  }
+
+  .post__link {
+    width: 260px;
+  }
+
+  .post__link--no-active {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+  
+    @include container;
+    outline: 1px solid blue;
+  }
+
+  .post__text {
+    width: 420px;
+    padding-left: 260px;
+    padding-right: 260px;
+  }
+
+  .post__done {
+    width: 780px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .post__img {
+    margin-right: 0;
+    width: 300px;
+  }
+
+  .post__done-info {
+    width: 410px;
+    margin-left: 0;
+  }
+
+  .post__filters-list {
+    width: 410px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .post__icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .post__controls {
+    width: 290px;
+  }
+  
+  .post__item {
+    padding-right: 30px;
+  }
+
+  .post__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .post__link {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 0;
+  }  
+}

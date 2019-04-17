@@ -32,3 +32,40 @@
   height: 23px;
   outline: 1px solid red;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+  
+    @include container;
+  }
+  .main-nav__list { 
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  .main-nav__logo {
+    width: 150px;
+    outline: 1px solid red;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(40, 54, 69, 0.3);
+    outline: 1px solid red;
+  }
+}
