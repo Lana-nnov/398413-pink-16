@@ -38,3 +38,73 @@
   width: 100%;
   height: 200px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 50px;
+  }
+
+  .contacts__title {
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contacts__wrapper {
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contacts__text--phone {
+    width: 310px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__text--email {
+    width: 310px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__text--address {
+    width: 310px;
+    margin: 0 auto;
+  }
+  
+  .contacts__map {
+    height: 380px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 70px;
+  }
+
+  .contacts__title {
+    width: 600px;
+    padding-left: 180px;
+    padding-right: 180px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contacts__wrapper {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .contacts__text--address {
+    margin: 0;
+  }
+
+   .contacts__map {
+    height: 500px;
+  }
+}

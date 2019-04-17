@@ -21,3 +21,52 @@
   font-size: 14px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    @include container;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    width: 150px;
+    margin: 0;
+  }
+
+  .page-footer__social {
+    width: 180px;
+    margin: 0;
+    outline: 1px solid green;
+  }
+
+  .page-footer__text {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .page-footer__copyright {
+    width: 130px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__text {
+    font-size: 18px;
+  }
+
+  page-footer__social {
+    width: 200px;
+  }
+
+  .page-footer__copyright {
+    width: 150px;
+  }
+}
+

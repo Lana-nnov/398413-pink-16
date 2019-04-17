@@ -90,3 +90,70 @@
   padding: 0;
   order: 1;
 }
+
+@media (min-width: $tablet-width) {   
+  .photo {
+    width: 300px;
+  }
+  
+  .photo--main {
+    width: 100%;
+  }
+  
+  .photo__wrapper {
+    width: 620px;
+  }
+
+  .photo__panorama-text {
+    top: 50px;
+  }
+
+  .photo__img--main {
+    height: 500px;
+    margin-left: calc(-100vw / 2 + 620px / 2);
+    margin-right: calc(-100vw / 2 + 620px / 2);
+  }
+
+  .photo__item--main {
+    width: 560px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .photo__likes {
+    margin-top: auto;
+  }
+  
+  .photo__item--main {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .photo__info--main {
+    width: 150px;
+  }
+
+  .photo__likes--main {
+    order: 0;    
+    width: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    margin-bottom: 50px;
+  }
+
+  .photo__wrapper {
+    width: 940px;
+  }
+
+  .photo__item--main {
+    width: 880px;
+  }
+
+  .photo__img--main {    
+    margin-left: calc(-100vw / 2 + 940px / 2);
+    margin-right: calc(-100vw / 2 + 940px / 2);
+  }
+}

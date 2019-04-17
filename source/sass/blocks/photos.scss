@@ -36,3 +36,74 @@
   max-width: 280px;
   outline: 1px solid red;
 }
+
+@media (min-width: $tablet-width) {
+  .photos {    
+    @include container;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+  }
+  
+  .photos__user {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    outline: 1px solid blue;
+  }
+
+  .photos__user:nth-child(3) {
+    width: 100%;
+  }
+  
+  .photos__wrapper {
+    margin-left: calc(-100vw / 2 + 620px / 2);
+    margin-right: calc(-100vw / 2 + 620px / 2);
+    padding-top: 70px;
+    background-image: url("../img/index-background-tablet@1x.jpg");
+    min-height: 330px;
+  }
+
+  .photos__title {
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 400px;
+  }
+
+  .photos__text {
+    max-width: 480px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    font-size: 18px;
+  }
+
+  .photo__likes {
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    outline: 1px solid blue;
+  }
+  
+  .photos__wrapper {     
+    margin-left: calc(-100vw / 2 + 940px / 2);
+    margin-right: calc(-100vw / 2 + 940px / 2);
+    background-image: url("../img/index-background-desktop@1x.jpg");
+  }
+
+  .photos__text {
+    max-width: 550px;
+    padding-left: 195px;
+    padding-right: 195px;
+  }    
+}

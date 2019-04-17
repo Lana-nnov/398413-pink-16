@@ -72,3 +72,91 @@
   text-align: center;
   outline: 1px solid white;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/index-background-tablet.jpg");
+  }
+
+  .promo::before {
+    top: auto;  
+    bottom: 0;
+    margin-left: -330px;
+    width: 660px;
+    height: 545px;
+    background-image: url(../img/hand-tablet.png);
+    z-index: 1;
+  }
+  
+  .promo__title {
+    font-size: 40px;  
+    line-height: 46px;    
+    width: 260px;
+    min-height: 260px;
+    padding-top: 90px;
+    padding-right: 350px;
+    padding-left: 55px;
+    margin: 0 auto;
+    text-align: center;
+    outline: 1px solid white;
+  }
+
+  .promo__wrap-list {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;    
+    width: 310px;
+    padding-right: 330px;
+    padding-left: 20px;
+    padding-top: 30px;
+    margin: 0 auto;
+    outline: 1px solid white;
+  }
+
+  .promo__link {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .promo__list {
+    width: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+  }
+
+  .promo__text {
+    padding-left: 0;
+    padding-right: 0;
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) { 
+    .promo {
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
+
+    .promo::before {      
+      margin-left: -525px;
+      width: 1050px;
+      height: 645px;
+      background-image: url(../img/hand-desktop.png);      
+    }
+    
+   .promo__title {
+    font-size: 50px;  
+    line-height: 56px;    
+    width: 275px;
+    padding-top: 115px;
+    padding-right: 640px;
+    padding-left: 45px;
+  }
+
+  .promo__wrap-list {     
+    padding-right: 630px;
+    padding-top: 50px;
+  }
+}
+
+

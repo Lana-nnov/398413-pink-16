@@ -31,3 +31,40 @@
   background-color: transparent;
   border: 2px solid #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .slider__toggles--tariffs {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__prev {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    width: 23px;
+    height: 42px;
+    margin-top: -21px;
+  }
+
+  .slider__next {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50%;
+    width: 23px;
+    height: 42px;
+    margin-top: -21px;
+  }
+
+  .slider--tariffs {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
