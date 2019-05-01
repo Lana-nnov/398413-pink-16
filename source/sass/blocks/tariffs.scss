@@ -1,8 +1,7 @@
 .tariffs {
   position: relative;
   background-color: #f2f2f2;
-  padding-top: 70px;
-  padding-bottom: 40px;
+  padding-top: 85px;
 }
 
 .tariffs__wrapper {
@@ -14,7 +13,7 @@
   border-collapse: collapse;
   width: 840px;
   margin-left: calc(-280px + (100vw - 280px) / 2);
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .tariffs__table tbody {
@@ -34,6 +33,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #283645;
+  font-family: "Opensansbold";
   color: #ffffff;
   font-size: 18px;
   line-height: 30px;
@@ -41,7 +41,8 @@
   text-transform: uppercase;
 }
 
-.tarriffs__price {
+.tariffs__price {
+  font-family: "Opensanslight";
   display: table;
   margin: 0 auto;
   font-size: 24px;
@@ -49,8 +50,8 @@
 
 .tariffs__value {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 20px;
   text-transform: uppercase;
   font-size: 14px;
@@ -91,6 +92,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tariffs {
+    padding-top: 63px;
+    padding-bottom: 65px;
+  }  
+  
   .tariffs__table {
     width: 620px;    
     margin-left: 0;
@@ -135,7 +141,19 @@
     }
   }
 
+  .tariffs__name {
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  .tariffs__price {
+    font-size: 18px;
+  }
+
   .tariffs__value {
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 15px;
     background-color: #ffffff;
     text-transform: none;
   }
@@ -143,16 +161,19 @@
   .tariffs__value--yes::before {
     right: 50%;
     margin-right: -10px;
+    margin-top: -8px;
   }
 
   .tariffs__value--no::before {
     right: 50%;
     margin-right: -13px;
+    margin-top: -13px;
   }  
 }
 
 @media (min-width: $desktop-width) {
   .tariffs { 
+    padding-top: 0;
     padding-bottom: 90px;
   }
 
@@ -176,7 +197,25 @@
     }
   }
   
+  .tariffs__name {
+    padding-bottom: 25px;
+  }
+  
+  .tariffs__price {
+    font-size: 24px;
+  }
+  
   .tariffs__value {
+    padding-top: 14px;
+    padding-bottom: 14px;
     font-size: 18px;
+  }
+
+  .tariffs__value--yes::before {
+    top: 30px;
+  }
+
+  .tariffs__value--no::before {
+    top: 30px;
   }    
 }

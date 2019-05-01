@@ -1,6 +1,6 @@
 .page-main__wrapper {
   padding-top: 30px;
-  min-height: 175px;
+  min-height: 142px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -21,6 +21,7 @@
 @media (min-width: $tablet-width) { 
   .page-main__wrapper {
     background-image: url("../img/index-background-tablet@1x.jpg");
+    padding-top: 72px;
     min-height: 260px;
   }
 
@@ -38,6 +39,7 @@
   }
 
   .page-main__title {
-    max-width: 770px;
+    max-width: 780px;
+    letter-spacing: -0.02em;
   }
 }

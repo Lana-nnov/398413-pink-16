@@ -8,15 +8,32 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="http://placehold.it/75x22" alt="Логотип Pink">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-nav__toggle-no" xmlns="http://www.w3.org/2000/svg" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867">
+              <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>
+            <svg class="main-nav__toggle-yes" xmlns="http://www.w3.org/2000/svg" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007">
+              <g id="miu">
+                <g id="editor_list_view_hambuger_menu_glyph">
+                  <g>
+                    <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                  <g>
+                    <path id="path-1_1_" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>  
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__link--active">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
@@ -38,19 +55,19 @@
             <li class="promo__item">
               <a class="promo__link-add promo__link-add--app" href="#">
                 <span class="visually-hidden">для iPhone</span>
-                <img class="promo__img" src="http://placehold.it/47x56" alt="Логотип Apple">
+                <img class="promo__img" src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
               </a>
             </li>
             <li class="promo__item">
               <a class="promo__link-add--andr" href="#">
                 <span class="visually-hidden">для Android</span>
-                <img class="promo__img" src="http://placehold.it/43x47" alt="Логотип Android">
+                <img class="promo__img" src="img/logo-android.svg" width="43" height="47" alt="Логотип Android">
               </a>
             </li>
             <li class="promo__item">
               <a class="promo__link-add--win" href="#">
                 <span class="visually-hidden">для Windows</span>
-                <img class="promo__img" src="http://placehold.it/44x41" alt="Логотип Microsoft">
+                <img class="promo__img" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft">
               </a>
             </li>
           </ul>
@@ -67,23 +84,23 @@
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            <img class="advantages__img advantages__img--desktop" src="http://placehold.it/157x320" alt="">
+            <img class="advantages__img advantages__img--desktop" src="img/iphone-screen-mobile@1x.png" alt="">
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            <img class="advantages__img advantages__img--desktop" src="http://placehold.it/157x320" alt="">
+            <img class="advantages__img advantages__img--desktop" src="img/iphone-screen-mobile@1x.png" alt="">
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description advantages__description--last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            <img class="advantages__img advantages__img--desktop" src="http://placehold.it/157x320" alt="">
+            <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" alt="">
           </li>
         </ul>
-        <div class="advantages__info">
-          <div class="advantages__wrapper">
-            <h3 class="advantages__title-time">Эффект на 24 часа!</h3>
-            <p class="advantages__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <div class="advantages__info">         
+          <div class="advantages__wrapper">            
+            <h3 class="advantages__title-time"><span>Эффект</span> на 24 часа!</h3>
+            <p class="advantages__text">Британские ученые провели исследования и доказали, <br> что положительный эффект <br>от использования приложения длится целые сутки!</p>
             <a class="advantages__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -100,11 +117,11 @@
             <button class="slider__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
             <button class="slider__next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </div>
-          <p class="reviews__toggles slider__toggles">
+          <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--active" type="button"></button>
             <button class="slider__toggle" type="button"></button>
             <button class="slider__toggle" type="button"></button>
-          </p>
+          </div>
         </div>
       </section>
       <section class="tariffs">
@@ -112,7 +129,7 @@
           <table class="tariffs__table slider__list">
             <tr class="tariffs__list slider__item">
               <td class="tariffs__name">База
-                <span class="tarriffs__price">1,99 usd</span>
+                <span class="tariffs__price">1,99 usd</span>
               </td>
               <td class="tariffs__value tariffs__value--yes">Розовый фильтр</td>
               <td class="tariffs__value tariffs__value--no">Смайлики</td>
@@ -120,7 +137,7 @@
             </tr>
             <tr class="tariffs__list slider__item">
               <td class="tariffs__name">Стандарт
-                <span class="tarriffs__price">3,99 usd</span>
+                <span class="tariffs__price">3,99 usd</span>
               </td>
               <td class="tariffs__value tariffs__value--yes">Розовый фильтр</td>
               <td class="tariffs__value tariffs__value--yes">Смайлики</td>
@@ -128,7 +145,7 @@
             </tr>
             <tr class="tariffs__list slider__item">
               <td class="tariffs__name">Анлим
-                <span class="tarriffs__price">9,99 usd</span>
+                <span class="tariffs__price">9,99 usd</span>
               </td>
               <td class="tariffs__value tariffs__value--yes">Розовый фильтр</td>
               <td class="tariffs__value tariffs__value--yes">Смайлики</td>
@@ -161,7 +178,7 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="#">
-        <img class="page-footer__logo-img" src="http://placehold.it/40x40" alt="Логотип Pink">
+        <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -182,10 +199,13 @@
       </ul>
       <div class="page-footer__copyright">
         <p class="page-footer__text">Разработано</p>
-          <a class="page-footer__logo" href="https://htmlacademy.ru/">
+          <a class="page-footer__logo-htmlacademy" href="https://htmlacademy.ru/">
             <span class="visually-hidden">HTML-академия</span>
+            <svg class="page-footer__logo-svg" width="37" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
           </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
