@@ -1,4 +1,6 @@
 .page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 280px;
   margin: 0 auto;
   outline: 1px solid red;
@@ -8,39 +10,67 @@
   display: block;
   width: 150px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .page-footer__social {
   width: 180px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 }
 
 .page-footer__copyright {
+  width: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 14px;
   text-align: center;
+}
+
+.page-footer__text {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__logo-htmlacademy {
+  width: 40px;
+  height: 50px;
+  
+  &:hover {
+    .page-footer__logo-svg {
+      path {
+        fill: #283645;
+      }
+    }
+  }
+}
+
+.page-footer__logo-svg {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     @include container;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
+    padding-top: 36px;
+    padding-bottom: 36px;    
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
   .page-footer__logo {
     width: 150px;
     margin: 0;
+    margin-bottom: 0;    
   }
 
   .page-footer__social {
     width: 180px;
-    margin: 0;
+    margin-left: 70px;
+    margin-bottom: 0;
     outline: 1px solid green;
   }
 
@@ -53,16 +83,23 @@
 
   .page-footer__copyright {
     width: 130px;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  
   .page-footer__text {
     font-size: 18px;
   }
 
-  page-footer__social {
-    width: 200px;
+  .page-footer__social {
+    width: 185px;
+    margin-left: 234px;
   }
 
   .page-footer__copyright {

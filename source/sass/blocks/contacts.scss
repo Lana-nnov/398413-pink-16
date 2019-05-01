@@ -4,6 +4,7 @@
 }
 
 .contacts__title {
+  font-family: "Opensanslight";
   font-size: 24px;
   color: #283645;
   width: 280px;
@@ -15,22 +16,22 @@
 .contacts__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
   outline: 1px solid red;
 }
 
 .contacts__text {
   font-size: 18px;
-  font-weight: bold;
+  font-family: "Opensansbold";
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .contacts__info {
   display: block;
   font-size: 24px;
-  font-weight: normal;
+  font-family: "Opensanslight";
   color: #d22856;
 }
 
@@ -41,13 +42,14 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 50px;
+    padding-top: 45px;
   }
 
   .contacts__title {
-    width: 620px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 370px;
+    padding-left: 145px;
+    padding-right: 145px;
+    margin-bottom: 37px;
     font-size: 40px;
     line-height: 50px;
   }
@@ -56,6 +58,7 @@
     width: 620px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -68,11 +71,11 @@
 
   .contacts__text--email {
     width: 310px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 
   .contacts__text--address {
-    width: 310px;
+    width: 297px;
     margin: 0 auto;
   }
   
@@ -83,13 +86,14 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-top: 70px;
+    padding-top: 63px;
   }
 
   .contacts__title {
     width: 600px;
     padding-left: 180px;
     padding-right: 180px;
+    margin-bottom: 55px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -98,13 +102,23 @@
     width: 940px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 5px;
+  }  
+  
+  .contacts__text--phone {
+    order: -2;
   }
   
   .contacts__text--address {
     margin: 0;
+    order: -1;
   }
-
-   .contacts__map {
+  
+  .contacts__info {
+    padding-top: 18px;
+  }
+  
+  .contacts__map {
     height: 500px;
   }
 }
