@@ -15,11 +15,15 @@
   outline: 1px solid red;
 }
 
+.advantages__main-title--last {
+  padding-bottom: 66px;
+}
+
 .advantages__list {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 80px;
+  padding-top: 47px;
   list-style: none;
   font-size: 14px;
   line-height: 24px;
@@ -29,9 +33,13 @@
 .advantages__list::before {
   position: absolute;
   content: "";
-  width: 100%;
-  left: 0;
-  top: 0;
+  width: 0;
+  right: 0;
+  top: -35px;
+  border: 35px solid transparent;
+  border-right: 100vw solid rgb(255, 68, 0);
+  border-bottom: 0px solid transparent;
+  outline: 1px solid green;
 }
 
 .advantages__list::after {
@@ -98,10 +106,10 @@
   }
   .advantages__main-title--last {
     width: 420px;  
-    padding-bottom: 44px;
+    padding-bottom: 77px;
   }
   .advantages__list {
-    padding-top: 75px;
+    padding-top: 40px;
     padding-bottom: 50px;
   }
   .advantages__item {
@@ -114,7 +122,8 @@
   
   .advantages__img {
     position: absolute;
-    left: 40px;
+    left: 50%;
+    margin-left: -312px;
     bottom: 44px;
   }
   
@@ -207,6 +216,18 @@
   .advantages {
     padding-top: 70px;
   }
+  
+  .advantages__list::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    right: 0;
+    top: -100px;
+    border: 100px solid transparent;
+    border-right: 100vw solid rgb(255, 68, 0);
+    border-bottom: 0px solid transparent;
+    outline: 1px solid green;
+  }
 
   .advantages__main-title {
     width: 840px;  
@@ -218,19 +239,14 @@
   
   .advantages__main-title--last {
     width: 440px;
-    padding-bottom: 75px;
+    padding-bottom: 170px;
   }
 
   .advantages__list {    
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 0;    
-
-    &::after {
-      height: 0;
-      width: 0;
-    }    
+    padding-top: 0;     
   }
 
   .advantages__item {
@@ -240,7 +256,9 @@
     padding-left: 0;  
     padding-right: 0;    
     margin: 0;
+    margin-top: -92px;
     text-align: center;
+    z-index: 2;
     
     &:first-child {
       padding-left: 10px;

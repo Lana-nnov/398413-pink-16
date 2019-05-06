@@ -12,7 +12,7 @@
   align-items: center;
   height: 25px;
   padding-top: 13px;  
-  padding-bottom: 40px;
+  padding-bottom: 66px;
   outline: 1px solid red;
 }
 
@@ -50,6 +50,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slider__toggles {
+    padding-bottom: 50px;
+  }
+
   .slider__toggles--tariffs {
     display: none;
   }
@@ -108,7 +112,7 @@
   }
 
   .slider--tariffs {
-    padding-top: 70px;
+    padding-top: 57px;
     padding-bottom: 8px;
   }
 }

@@ -12,3 +12,25 @@ navToggle.addEventListener("click", function() {
     navMain.classList.remove("main-nav--opened");
   }
 });
+
+// Интерактивная карта
+
+function initMap() {
+  var element = document.getElementById("interactive-map");
+  var options = {
+    zoom: 17,
+    center: {lat: 59.9389129, lng: 30.3233088} 
+  };
+
+  var myMap = new google.maps.Map(element, options);
+  
+   myMap.panBy(0, -20);
+   
+  var image = "img/icon-map-marker.svg";
+
+  var marker = new google.maps.Marker ({
+    position: {lat: 59.9389129, lng: 30.3233088},
+    map: myMap,
+    icon: image
+  });  
+}
