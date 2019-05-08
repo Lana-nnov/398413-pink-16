@@ -11,7 +11,6 @@
   background-size: cover;
   color: #ffffff;
   z-index: 1;
-  outline: 1px solid green;
   
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -59,6 +58,16 @@
   text-align: center;
   border-radius: 50px;
   border: 3px solid white;
+  
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+  
+  &:active {
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 0.3);    
+  }
 }
 
 .promo__list {
@@ -71,7 +80,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid white;
 }
 
 .promo__text {
@@ -84,7 +92,6 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  outline: 1px solid white;
 }
 
 @media (min-width: $tablet-width) {
@@ -124,7 +131,6 @@
     padding-left: 50px;
     margin: 0 auto;
     text-align: center;
-    outline: 1px solid white;
   }
 
   .promo__wrap-list {
@@ -136,7 +142,6 @@
     padding-left: 12px;
     padding-top: 30px;
     margin: 0 auto;
-    outline: 1px solid white;
   }
 
   .promo__link {

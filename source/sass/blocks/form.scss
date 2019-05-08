@@ -5,7 +5,6 @@
   padding-bottom: 15px;
   text-align: center;
   font-size: 14px;
-  outline: 1px solid red;
   
   span {
     display: none;
@@ -46,6 +45,7 @@
 .form__label-check {
   position: relative;
   padding-left: 70px;
+  cursor: pointer;
 }
 
 .form__check + .form__label-check::before {
@@ -57,6 +57,15 @@
     width: 31px;
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
+}
+
+.form__check:hover + .form__label-check::before {  
+  border: 2px solid #283645;
+}
+
+.form__check:active + .form__label-check::before {
+  border: 2px solid #d22856;
+  outline: none;
 }
 
 .form__check:checked + .form__label-check::after {
@@ -94,6 +103,7 @@
 .form__label-radio {
   position: relative;
   padding-left: 70px;
+  cursor: pointer;
 }
 
 .form__radio {
@@ -110,6 +120,15 @@
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
     border-radius: 50%;
+}
+
+.form__radio:hover + .form__label-radio::before {
+  border: 2px solid #283645;
+}
+
+.form__radio:active + .form__label-radio::before {
+  border: 2px solid #d22856;
+  outline: none;
 }
 
 .form__radio:checked + .form__label-radio::after {
@@ -133,6 +152,20 @@
   color: #283645;
   font-family: "Opensans";
   border: 2px solid #e5e5e5;
+  
+  &:hover {
+    border: 2px solid #283645;
+  }
+  
+  &:active {
+    border: 2px solid #d22856;
+    outline: none;
+  }
+  
+  &:focus {
+    border: 2px solid #d22856;
+    outline: none;
+  }
 }
 
 .form__title {
@@ -164,6 +197,20 @@
   color: #283645;
   font-family: "Opensans";
   border: 2px solid #e5e5e5;
+  
+  &:hover {
+    border: 2px solid #283645;
+  }
+  
+  &:active {
+    border: 2px solid #d22856;
+    outline: none;
+  }
+  
+  &:focus {
+    border: 2px solid #d22856;
+    outline: none;
+  }
 }
 
 .form__send {
@@ -177,6 +224,20 @@
   text-transform: uppercase;
   background-color: #2aab6d;
   border: none;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+  &:disabled {
+    background-color: #e5e5e5;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form__note {
@@ -188,7 +249,6 @@
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  outline: 1px solid red;
 
   span {
     display: none;
@@ -262,7 +322,6 @@
     transform: translateX(-50%);
     background-color: #ffffff;
     white-space: nowrap;
-    outline: 1px solid green;
   }
   
   .form__title--contacts {
@@ -340,13 +399,13 @@
     margin-bottom: 13px;
     padding-right: 80px;
     width: 500px;
-    background-image: url(../img/icon-phone.svg), linear-gradient(to right, #ffffff 85%, #e5e5e5 15%);
+    background-image: url(../img/icon-phone.svg), linear-gradient(to right, #ffffff 87%, #e5e5e5 13%);
     background-repeat: no-repeat;
     background-position: 96%;
   }
   
   .form__text--info[type="email"] {
-    background-image: url(../img/icon-mail.svg), linear-gradient(to right, #ffffff 85%, #e5e5e5 15%);    
+    background-image: url(../img/icon-mail.svg), linear-gradient(to right, #ffffff 87%, #e5e5e5 13%);    
   }
   
   .form__comment {
@@ -358,11 +417,10 @@
 
   .form__button-wrap {
     width: 620px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    outline: 1px solid red;
   }
 
   .form__send {
@@ -383,7 +441,7 @@
 
   .form__info {
     width: 780px;
-    padding-top: 96px;
+    padding-top: 93px;
     padding-left: 90px;
     padding-right: 90px;
     padding-bottom: 79px;
@@ -429,10 +487,8 @@
     justify-content: space-between;
   }
   
-  .form__section--info   {
-    width: 375px;
-    margin-bottom: 0;
-    outline: 1px solid green;    
+  .form__section--info   {    
+    margin-bottom: 0;  
   }
 
   .form__field--check {
@@ -446,11 +502,10 @@
   .form__section-check {
     width: 238px;
     padding-left: 45px;
-    padding-top: 33px;
+    padding-top: 30px;
     margin: 0;
     margin-bottom: 0;
     flex-grow: 1;
-    outline: 1px solid green;
     
     &:nth-child(2n) {
       order: -1;
@@ -476,6 +531,22 @@
   
   .form__label-check {   
     padding-left: 55px;
+  }
+  
+  .form__text--info {
+    width: 375px;
+    background-image: url(../img/icon-phone.svg), linear-gradient(to right, #ffffff 84%, #e5e5e5 16%);
+    background-position: 95%;
+  }
+  
+  .form__text--info[type="email"] {
+    margin-left: 60px;
+    background-image: url(../img/icon-mail.svg), linear-gradient(to right, #ffffff 84%, #e5e5e5 16%);
+    background-position: 95%;
+  }
+  
+  .form__label--info-email {
+    margin-left: 52px;
   }
 
   .form__field--textarea {

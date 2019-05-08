@@ -4,14 +4,12 @@
   background-color: #f2f2f2;
   width: 280px;
   margin-bottom: 20px;
-  outline: 1px solid red;
 }
 
 .photo__wrapper {
   position: relative;
   width: 280px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .photo__panorama-text {
@@ -33,11 +31,11 @@
 .photo--main {
   width: 100%;
   background-color: #ffffff;
-  outline: 1px solid blue;  
 }
 
 .photo__img {
   display: block;
+  height: 180px;
 }
 
 .photo__img--main {
@@ -47,7 +45,6 @@
   margin-right: calc(-100vw / 2 + 280px / 2);
   height: 135px;
   background-size: cover;
-  outline: 1px solid green;
 }
 
 .photo__item {
@@ -107,7 +104,6 @@
     background-image: url("../img/icon-heart.svg");
     background-position: center;
     background-repeat: no-repeat;
-    outline: 1px solid red;
   }
 }
 
@@ -144,7 +140,7 @@
   }
 
   .photo__img--main {
-    height: 510px;
+    height: 507px;
     margin-left: calc(-100vw / 2 + 620px / 2);
     margin-right: calc(-100vw / 2 + 620px / 2);
   }

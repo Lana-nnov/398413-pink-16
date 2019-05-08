@@ -24,7 +24,6 @@
 .site-list__link[href] {
   &:hover {
     color: #d22856;
-    outline: 1px solid blue;
   }
 
   &:active {
@@ -53,7 +52,7 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: 5px;
         left: 0;
         right: 0;
         height: 2px;

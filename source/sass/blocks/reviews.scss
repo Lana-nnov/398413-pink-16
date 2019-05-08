@@ -2,7 +2,6 @@
   width: 280px;
   margin: 0 auto;
   margin-top: -35px;
-  outline: 1px solid red;
 }
 
 .reviews__item {
@@ -100,9 +99,14 @@
 
   .reviews__author-name {
     font-size: 24px;
+    margin-bottom: 100px;
   }
   
   .reviews__author-info {
     font-size: 18px;
+  }
+  
+  .reviews__toggles {
+    display: none;
   }
 }

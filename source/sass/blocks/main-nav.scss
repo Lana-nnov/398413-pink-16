@@ -10,12 +10,33 @@
   justify-content: space-between;   
   align-items: center;
 }
+
 .main-nav__logo {
   width: 75px;
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: rgba(40, 54, 69, 0.3);
-  outline: 1px solid green;
+}
+
+.main-nav__logo-img {
+  cursor: pointer;
+  margin-left: -72px;
+  
+  &:hover {
+    path {
+      fill: #d22856;
+    }
+  }
+  
+  &:active {
+    path {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.main-nav__logo-tablet, .main-nav__logo-desktop, .main-nav__logo-desktop2 {  
+    display: none;  
 }
 
 .main-nav__list {
@@ -39,12 +60,27 @@
     width: 147px;
     height: 40px;
   }
+  
+  .main-nav__logo-img {
+    margin-left: 0;
+  }
+
+  .main-nav__logo-tablet {  
+    display: block;  
+  }
+  
+  .main-nav__logo-desktop2 {
+    display: block;
+    
+    path {
+      fill: #ffffff;
+    }
+  }
 }
 
 @media (max-width: $mobile-width-only) {  
   .main-nav--closed {
     background-color: rgba(29, 48, 39, 0.3);
-    outline: 1px solid red;
   }
   
   .main-nav--closed .main-nav__list {
@@ -59,6 +95,7 @@
     width: 27px;
     height: 27px;
     padding: 0;
+    padding-top: 5px;
     margin: 0;
     cursor: pointer;
     border: none;
@@ -74,6 +111,10 @@
       .main-nav__toggle-no {
         fill: rgba(210, 40, 86, 0.3);
       }  
+    }
+    
+    &:focus {
+      outline: none;
     }
   }
 
@@ -96,6 +137,10 @@
       .main-nav__toggle-yes { 
         fill: rgba(210, 40, 86, 0.3);
       }  
+    }
+    
+    &:focus {
+      outline: none;
     }
   }
 
@@ -120,7 +165,6 @@
 @media (min-width: $desktop-width) {
   .main-nav {    
     background-color: rgba(29, 48, 39, 0.3);
-    outline: 1px solid red;
   }
   
   .main-nav__main-wrapper {
@@ -143,7 +187,16 @@
   .main-nav__logo {
     padding-top: 25px;
     width: 150px;
-    outline: 1px solid red;
+  }
+  
+  .main-nav__logo-tablet, .main-nav__logo-desktop {  
+    display: block;         
+  }
+  
+  .main-nav__logo-desktop2 {  
+    path {
+      fill: #d22856;
+    }    
   }
 
   .main-nav__toggle {

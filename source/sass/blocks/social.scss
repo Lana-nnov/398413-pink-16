@@ -29,6 +29,10 @@
   &:hover {
     border: 3px solid #283645;
   }
+  
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--twitter {
@@ -49,5 +53,11 @@
     
   &::before {    
     background-image: url("../img/icon-youtube.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-top: 10px;
   }
 }
